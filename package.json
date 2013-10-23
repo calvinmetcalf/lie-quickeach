@@ -1,0 +1,27 @@
+{
+  "name": "lie-quickeach",
+  "version": "0.1.0",
+  "description": "quickly lie to each of them",
+  "main": "lib/quickEach.js",
+  "scripts": {
+    "test": "./node_modules/istanbul/lib/cli.js test ./node_modules/mocha/bin/_mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/calvinmetcalf/lie-quickEach.git"
+  },
+  "keywords": [
+    "lie",
+    "promise",
+    "async"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calvinmetcalf/lie-quickEach/issues"
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.13.0",
+    "istanbul": "~0.1.44"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "lie-quickeach",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "quickly lie to each of them",
   "main": "lib/quickEach.js",
   "scripts": {

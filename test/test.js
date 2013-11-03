@@ -1,16 +1,20 @@
 'use strict';
-var quickmap = require('../lib/quickMap');
+var quickeach = require('../lib/quickEach');
 var chai = require('chai');
 chai.should();
-describe("quickmap", function() {
+describe("quickeach", function() {
     it('should work',function(){
-        quickmap([1,2,3,4,5],function(a){
-            return a*a;
-        }).should.deep.equal([1,4,9,16,25]);
+        var out = [];
+        quickeach([1,2,3,4,5],function(a){
+            out.push(a*a);
+        });
+        out.should.deep.equal([1,4,9,16,25]);
     });
     it('should work with an empty array',function(){
-        quickmap([],function(a){
-            return a*a;
-        }).should.deep.equal([]);
+        var out = [];
+        quickeach([],function(a){
+            out.push(a*a);
+        })
+        out.should.deep.equal([]);
     });
 });
